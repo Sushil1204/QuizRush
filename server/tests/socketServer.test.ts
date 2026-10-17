@@ -177,4 +177,32 @@ describe('room Socket.IO events', () => {
     expect(reveal.questionId).toBe(hostPayload.question.id)
     expect(reveal.entries).toHaveLength(2)
   })
+
+  it('restores a disconnected player through the private reconnect token', async () => {
+    const url = await setup()
+    const host = await client(url)
+    const guest = await client(url)
+    const session = await emitAck<RoomSession>(host, 'room:create', {
+      nickname: 'Host',
+      avatarId: 'cool',
+      settings,
+    })
+    const guestSession = await emitAck<RoomSession>(guest, 'room:join', {
+      roomCode: session.room.code,
+      nickname: 'Guest',
+      avatarId: 'cat',
+    })
+    guest.disconnect()
+
+    const reconnected = await client(url)
+    const restored = await emitAck<RoomSession>(reconnected, 'room:join', {
+      roomCode: session.room.code,
+      nickname: 'ignored',
+      avatarId: 'robot',
+      reconnectToken: guestSession.reconnectToken,
+    })
+    expect(restored.player.id).toBe(guestSession.player.id)
+    expect(restored.player.nickname).toBe('Guest')
+    expect(restored.room.players.find((player) => player.id === restored.player.id)?.disconnected).toBe(false)
+  })
 })

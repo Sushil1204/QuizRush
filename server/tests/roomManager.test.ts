@@ -93,6 +93,29 @@ describe('RoomManager', () => {
     expect(reconnected.player.nickname).toBe('Host')
   })
 
+  it('expires disconnected players after the grace window and transfers the host', async () => {
+    let now = 1_000
+    const questionBank = await loadQuestionBank(bankPath)
+    const manager = new RoomManager(questionBank, {
+      now: () => now,
+      disconnectGraceMs: 100,
+    })
+    const host = manager.create({ nickname: 'Host', avatarId: 'cool', settings })
+    const guest = manager.join({ roomCode: host.room.code, nickname: 'Guest', avatarId: 'cat' })
+    manager.markDisconnected(host.room.code, host.player.id)
+    now += 101
+
+    expect(manager.cleanupExpired()).toEqual([])
+    expect(manager.snapshotByCode(host.room.code).hostId).toBe(guest.player.id)
+    expect(manager.snapshotByCode(host.room.code).players.some((player) => player.id === host.player.id)).toBe(false)
+    expect(() => manager.join({
+      roomCode: host.room.code,
+      nickname: 'Host again',
+      avatarId: 'cool',
+      reconnectToken: host.reconnectToken,
+    })).toThrowError(expect.objectContaining({ code: 'RECONNECT_INVALID' }))
+  })
+
   it('returns structured errors for missing and invalid rooms', async () => {
     const manager = await createManager()
     expect(() => manager.join({ roomCode: 'bad', nickname: 'Guest', avatarId: 'cat' })).toThrowError(

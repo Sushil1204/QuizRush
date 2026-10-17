@@ -2,6 +2,7 @@ import type { Server as HttpServer } from 'node:http'
 import { Server, type Socket } from 'socket.io'
 import { answerSubmitSchema, roomCreateSchema, roomJoinSchema, roomReadySchema, roomSettingsSchema } from './schemas.js'
 import { GameEngine, type GameEvent } from './gameEngine.js'
+import { RateLimiter, type RateLimit } from './rateLimiter.js'
 import { RoomManager, RoomManagerError } from './roomManager.js'
 import type {
   Ack,
@@ -19,6 +20,7 @@ export type SocketServerOptions = {
   manager: RoomManager
   gameEngine: GameEngine
   corsOrigin?: string | string[]
+  rateLimiter?: RateLimiter
 }
 
 function toClientError(error: unknown): ClientError {
@@ -68,6 +70,19 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
     cors: { origin: options.corsOrigin ?? true },
   })
   const { manager, gameEngine } = options
+  const rateLimiter = options.rateLimiter ?? new RateLimiter()
+  const defaultCommandLimit: RateLimit = { max: 40, windowMs: 10_000 }
+  const commandLimits: Record<string, RateLimit> = {
+    'answer:submit': { max: 20, windowMs: 1_000 },
+  }
+
+  const rateLimited = (socketId: string, eventName: string): boolean =>
+    !rateLimiter.allow(`${socketId}:${eventName}`, commandLimits[eventName] ?? defaultCommandLimit)
+
+  const emitCurrentQuestion = (socket: QuizSocket, roomCode: string): void => {
+    const question = gameEngine.currentQuestion(roomCode)
+    if (question) socket.emit('game:question-open', question)
+  }
 
   const emitGameEvent = (event: GameEvent): void => {
     switch (event.name) {
@@ -97,6 +112,10 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
 
   io.on('connection', (socket) => {
     socket.on('room:create', (payload, callback) => {
+      if (rateLimited(socket.id, 'room:create')) {
+        callback(fail({ code: 'RATE_LIMITED', message: 'Too many room commands. Try again shortly.' }))
+        return
+      }
       const result = roomCreateSchema.safeParse(payload)
       if (!result.success) {
         callback(fail({ code: 'INVALID_PAYLOAD', message: 'The room details are invalid.', details: result.error.issues }))
@@ -116,6 +135,10 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
     })
 
     socket.on('room:join', (payload, callback) => {
+      if (rateLimited(socket.id, 'room:join')) {
+        callback(fail({ code: 'RATE_LIMITED', message: 'Too many room commands. Try again shortly.' }))
+        return
+      }
       const result = roomJoinSchema.safeParse(payload)
       if (!result.success) {
         callback(fail({ code: 'INVALID_PAYLOAD', message: 'The join details are invalid.', details: result.error.issues }))
@@ -130,12 +153,17 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
         callback(ok(session))
         socket.to(session.room.code).emit('room:player-joined', session.player)
         emitRoomState(io, manager, session.room.code)
+        emitCurrentQuestion(socket, session.room.code)
       } catch (error) {
         callback(fail(error))
       }
     })
 
     socket.on('room:leave', (callback) => {
+      if (rateLimited(socket.id, 'room:leave')) {
+        callback(fail({ code: 'RATE_LIMITED', message: 'Too many room commands. Try again shortly.' }))
+        return
+      }
       try {
         const { roomCode, playerId } = requireSession(socket)
         const result = manager.leave(roomCode, playerId)
@@ -154,6 +182,10 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
     })
 
     socket.on('room:ready', (payload, callback) => {
+      if (rateLimited(socket.id, 'room:ready')) {
+        callback(fail({ code: 'RATE_LIMITED', message: 'Too many room commands. Try again shortly.' }))
+        return
+      }
       const result = roomReadySchema.safeParse(payload)
       if (!result.success) {
         callback(fail({ code: 'INVALID_PAYLOAD', message: 'Ready status must be a boolean.', details: result.error.issues }))
@@ -170,6 +202,10 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
     })
 
     socket.on('room:update-settings', (payload, callback) => {
+      if (rateLimited(socket.id, 'room:update-settings')) {
+        callback(fail({ code: 'RATE_LIMITED', message: 'Too many room commands. Try again shortly.' }))
+        return
+      }
       const result = roomSettingsSchema.safeParse(payload)
       if (!result.success) {
         callback(fail({ code: 'INVALID_PAYLOAD', message: 'The room settings are invalid.', details: result.error.issues }))
@@ -186,16 +222,25 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
     })
 
     socket.on('game:request-state', (callback) => {
+      if (rateLimited(socket.id, 'game:request-state')) {
+        callback(fail({ code: 'RATE_LIMITED', message: 'Too many room commands. Try again shortly.' }))
+        return
+      }
       try {
         const { roomCode, playerId } = requireSession(socket)
         manager.requireMembership(roomCode, playerId)
         callback(ok(manager.snapshotByCode(roomCode)))
+        emitCurrentQuestion(socket, roomCode)
       } catch (error) {
         callback(fail(error))
       }
     })
 
     socket.on('game:start', (callback) => {
+      if (rateLimited(socket.id, 'game:start')) {
+        callback(fail({ code: 'RATE_LIMITED', message: 'Too many room commands. Try again shortly.' }))
+        return
+      }
       try {
         const { roomCode, playerId } = requireSession(socket)
         const state = gameEngine.start(roomCode, playerId)
@@ -207,6 +252,10 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
     })
 
     socket.on('answer:submit', (payload, callback) => {
+      if (rateLimited(socket.id, 'answer:submit')) {
+        callback(fail({ code: 'RATE_LIMITED', message: 'Answering too quickly. Try again shortly.' }))
+        return
+      }
       const result = answerSubmitSchema.safeParse(payload)
       if (!result.success) {
         callback(fail({ code: 'INVALID_PAYLOAD', message: 'The answer payload is invalid.', details: result.error.issues }))
@@ -221,6 +270,10 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
     })
 
     socket.on('game:rematch', (callback) => {
+      if (rateLimited(socket.id, 'game:rematch')) {
+        callback(fail({ code: 'RATE_LIMITED', message: 'Too many room commands. Try again shortly.' }))
+        return
+      }
       try {
         const { roomCode, playerId } = requireSession(socket)
         const result = gameEngine.rematch(roomCode, playerId)
@@ -238,6 +291,7 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
       manager.markDisconnected(roomCode, playerId)
       gameEngine.playerRemoved(roomCode, playerId)
       emitRoomState(io, manager, roomCode)
+      rateLimiter.clear(`${socket.id}:`)
     })
   })
 

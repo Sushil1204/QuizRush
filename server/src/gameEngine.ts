@@ -182,6 +182,20 @@ export class GameEngine {
     if (room.phase === 'QUESTION_OPEN' && this.allEligiblePlayersAnswered(room)) this.closeQuestion(room.code)
   }
 
+  currentQuestion(roomCode: string): GameQuestionOpenPayload | null {
+    const room = this.manager.get(roomCode)
+    if (!room?.game || room.phase !== 'QUESTION_OPEN') return null
+    const question = room.game.questions[room.game.currentQuestionIndex]
+    if (!question || room.questionOpenedAt === null || room.deadlineAt === null) return null
+    return {
+      question: publicQuestion(question),
+      questionIndex: room.game.currentQuestionIndex,
+      totalQuestions: room.game.questions.length,
+      openedAt: room.questionOpenedAt,
+      deadlineAt: room.deadlineAt,
+    }
+  }
+
   disposeRoom(roomCode: string): void {
     this.clearRoomTimers(roomCode)
     this.timers.delete(roomCode)
