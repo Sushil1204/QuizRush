@@ -1,0 +1,29 @@
+{
+  "name": "quizrush-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/copy-bank.mjs",
+    "dev": "tsx src/server.ts",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "check": "npm run build && npm test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "QuizRush authoritative multiplayer game server",
+  "dependencies": {
+    "socket.io": "^4.8.4",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "socket.io-client": "^4.8.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}

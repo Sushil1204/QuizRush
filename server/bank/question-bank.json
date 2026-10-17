@@ -1,0 +1,3904 @@
+{
+  "questions": [
+    {
+      "id": "sci-e01",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "What gas do plants take in from the air?",
+      "options": [
+        "Oxygen",
+        "Carbon dioxide",
+        "Nitrogen",
+        "Helium"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-e02",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "How many legs does a spider have?",
+      "options": [
+        "Six",
+        "Eight",
+        "Ten",
+        "Twelve"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-e03",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "What is the closest star to Earth?",
+      "options": [
+        "Proxima Centauri",
+        "Sirius",
+        "The Sun",
+        "The Moon"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-e04",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "At what temperature does water freeze in Celsius?",
+      "options": [
+        "0 degrees",
+        "10 degrees",
+        "32 degrees",
+        "100 degrees"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "sci-e05",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "Which planet is called the Red Planet?",
+      "options": [
+        "Venus",
+        "Mars",
+        "Jupiter",
+        "Mercury"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-m01",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "What is the chemical symbol for gold?",
+      "options": [
+        "Ag",
+        "Au",
+        "Gd",
+        "Go"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-m02",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "Which part of the cell holds the DNA?",
+      "options": [
+        "Ribosome",
+        "Cell membrane",
+        "Nucleus",
+        "Cytoplasm"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-m03",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "Which force pulls objects toward the Earth?",
+      "options": [
+        "Friction",
+        "Gravity",
+        "Magnetism",
+        "Inertia"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-m04",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "How many bones are in the adult human body?",
+      "options": [
+        "106",
+        "206",
+        "276",
+        "306"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-m05",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "What is the hardest natural substance on Earth?",
+      "options": [
+        "Quartz",
+        "Diamond",
+        "Topaz",
+        "Iron"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-h01",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "What is the chemical formula for ozone?",
+      "options": [
+        "O2",
+        "CO2",
+        "O3",
+        "NO2"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-h02",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "Which blood type is called the universal donor?",
+      "options": [
+        "AB positive",
+        "A positive",
+        "O negative",
+        "B negative"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-h03",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "Roughly how fast is light in a vacuum?",
+      "options": [
+        "3,000 km/s",
+        "30,000 km/s",
+        "300,000 km/s",
+        "3,000,000 km/s"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-h04",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "Which element has the atomic number 79?",
+      "options": [
+        "Silver",
+        "Platinum",
+        "Gold",
+        "Mercury"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-h05",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "About how old is the universe?",
+      "options": [
+        "4.5 billion years",
+        "13.8 billion years",
+        "50 billion years",
+        "26 billion years"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-e01",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Who was the first president of the United States?",
+      "options": [
+        "Abraham Lincoln",
+        "Thomas Jefferson",
+        "George Washington",
+        "John Adams"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-e02",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Which ship famously sank on its maiden voyage in 1912?",
+      "options": [
+        "Lusitania",
+        "Titanic",
+        "Britannic",
+        "Carpathia"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-e03",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "In which year did World War II end?",
+      "options": [
+        "1918",
+        "1939",
+        "1945",
+        "1953"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-e04",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "The pyramids of Giza stand in which country?",
+      "options": [
+        "Egypt",
+        "Sudan",
+        "Iraq",
+        "Greece"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "his-e05",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Who painted the Mona Lisa?",
+      "options": [
+        "Michelangelo",
+        "Raphael",
+        "Donatello",
+        "Leonardo da Vinci"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "his-m01",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Which wall divided Berlin until 1989?",
+      "options": [
+        "Hadrian's Wall",
+        "The Berlin Wall",
+        "The Western Wall",
+        "The Great Wall"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-m02",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "The Magna Carta was sealed in which country?",
+      "options": [
+        "France",
+        "England",
+        "Spain",
+        "Italy"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-m03",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Who was the first woman to fly solo across the Atlantic?",
+      "options": [
+        "Bessie Coleman",
+        "Harriet Quimby",
+        "Amelia Earhart",
+        "Jacqueline Cochran"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-m04",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "The Renaissance began in which modern-day country?",
+      "options": [
+        "Italy",
+        "France",
+        "England",
+        "The Netherlands"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "his-m05",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Which empire built Machu Picchu?",
+      "options": [
+        "The Aztecs",
+        "The Maya",
+        "The Inca",
+        "The Romans"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-h01",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "In what year was the Magna Carta signed?",
+      "options": [
+        "1066",
+        "1215",
+        "1315",
+        "1492"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-h02",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Who was the last tsar of Russia?",
+      "options": [
+        "Peter the Great",
+        "Alexander III",
+        "Nicholas II",
+        "Ivan the Terrible"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-h03",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "The Hundred Years' War was fought between England and which country?",
+      "options": [
+        "Spain",
+        "France",
+        "Scotland",
+        "Portugal"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-h04",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Which Roman city was buried by Mount Vesuvius in 79 AD?",
+      "options": [
+        "Carthage",
+        "Athens",
+        "Pompeii",
+        "Sparta"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-h05",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "The Meiji Restoration returned power to whom in Japan?",
+      "options": [
+        "The Emperor",
+        "The Shogun",
+        "The Prime Minister",
+        "The Samurai Council"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-e01",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "What is the capital of France?",
+      "options": [
+        "Berlin",
+        "Paris",
+        "Madrid",
+        "Rome"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-e02",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which is the largest ocean on Earth?",
+      "options": [
+        "Atlantic",
+        "Indian",
+        "Arctic",
+        "Pacific"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "geo-e03",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "How many continents are there?",
+      "options": [
+        "Five",
+        "Six",
+        "Seven",
+        "Eight"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-e04",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which river flows through Cairo?",
+      "options": [
+        "The Nile",
+        "The Amazon",
+        "The Danube",
+        "The Thames"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-e05",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which is the largest country by land area?",
+      "options": [
+        "China",
+        "The United States",
+        "Canada",
+        "Russia"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "geo-m01",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "What is the capital of Australia?",
+      "options": [
+        "Sydney",
+        "Melbourne",
+        "Canberra",
+        "Perth"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-m02",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which is the largest hot desert in the world?",
+      "options": [
+        "The Gobi",
+        "The Sahara",
+        "The Kalahari",
+        "The Arabian"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-m03",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Mount Everest sits on the border of Nepal and which country?",
+      "options": [
+        "India",
+        "China",
+        "Pakistan",
+        "Bhutan"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-m04",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "The Great Barrier Reef lies off the coast of which country?",
+      "options": [
+        "Brazil",
+        "Australia",
+        "Mexico",
+        "South Africa"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-m05",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which is the deepest lake in the world?",
+      "options": [
+        "Lake Superior",
+        "Lake Victoria",
+        "Lake Baikal",
+        "Lake Tanganyika"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-h01",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "What is the capital of Kazakhstan?",
+      "options": [
+        "Almaty",
+        "Astana",
+        "Bishkek",
+        "Tashkent"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-h02",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which country is completely surrounded by South Africa?",
+      "options": [
+        "Lesotho",
+        "Eswatini",
+        "Botswana",
+        "Namibia"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-h03",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which is the southernmost capital city in the world?",
+      "options": [
+        "Canberra",
+        "Wellington",
+        "Santiago",
+        "Buenos Aires"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-h04",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which strait separates Spain from Morocco?",
+      "options": [
+        "The Strait of Gibraltar",
+        "The Bosphorus",
+        "The Strait of Hormuz",
+        "The Strait of Malacca"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-h05",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which two countries share the world's longest international border?",
+      "options": [
+        "Russia and China",
+        "Argentina and Chile",
+        "The United States and Canada",
+        "India and China"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-e01",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "Which film made 'I'll be back' famous?",
+      "options": [
+        "RoboCop",
+        "The Terminator",
+        "Predator",
+        "Commando"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-e02",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "What is the name of Harry Potter's owl?",
+      "options": [
+        "Errol",
+        "Pigwidgeon",
+        "Hedwig",
+        "Scabbers"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-e03",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "Who plays Iron Man in the Marvel films?",
+      "options": [
+        "Chris Evans",
+        "Mark Ruffalo",
+        "Chris Hemsworth",
+        "Robert Downey Jr."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ent-e04",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "Which band performed 'Bohemian Rhapsody'?",
+      "options": [
+        "The Beatles",
+        "Queen",
+        "Led Zeppelin",
+        "Pink Floyd"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-e05",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "In Frozen, what is the name of Elsa's sister?",
+      "options": [
+        "Anna",
+        "Ariel",
+        "Belle",
+        "Moana"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-m01",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Which TV series is set in the land of Westeros?",
+      "options": [
+        "The Witcher",
+        "Game of Thrones",
+        "Vikings",
+        "Shadow and Bone"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-m02",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Who directed Jurassic Park?",
+      "options": [
+        "James Cameron",
+        "Steven Spielberg",
+        "Ridley Scott",
+        "George Lucas"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-m03",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Which is the highest-grossing film of all time at the box office?",
+      "options": [
+        "Avatar",
+        "Titanic",
+        "Avengers: Endgame",
+        "Star Wars: The Force Awakens"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-m04",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Who wrote the novel that became the movie Jaws?",
+      "options": [
+        "Stephen King",
+        "Michael Crichton",
+        "Peter Benchley",
+        "Dean Koontz"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-m05",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "What is the name of the coffee shop in Friends?",
+      "options": [
+        "Central Perk",
+        "The Bean",
+        "Beans & Brews",
+        "Grind House"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-h01",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which film won the first Academy Award for Best Picture?",
+      "options": [
+        "Wings",
+        "Sunrise",
+        "The Jazz Singer",
+        "Metropolis"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-h02",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "What is the real name of the musician Sting?",
+      "options": [
+        "Gordon Sumner",
+        "Eric Clapton",
+        "David Bowie",
+        "Roger Waters"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-h03",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which was the first feature film made entirely with computer animation?",
+      "options": [
+        "Antz",
+        "A Bug's Life",
+        "Toy Story",
+        "Shrek"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-h04",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Who directed the movie Parasite?",
+      "options": [
+        "Park Chan-wook",
+        "Bong Joon-ho",
+        "Lee Chang-dong",
+        "Kim Jee-woon"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-h05",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which Shakespeare play features the fairy Puck?",
+      "options": [
+        "The Tempest",
+        "Macbeth",
+        "A Midsummer Night's Dream",
+        "Hamlet"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-e01",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "How many players does a soccer team have on the field?",
+      "options": [
+        "Nine",
+        "Ten",
+        "Eleven",
+        "Twelve"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-e02",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "In tennis, what do you call a score of zero?",
+      "options": [
+        "Nil",
+        "Love",
+        "Duck",
+        "Blank"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-e03",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "Which sport is played at Wimbledon?",
+      "options": [
+        "Golf",
+        "Tennis",
+        "Cricket",
+        "Rugby"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-e04",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "How many rings are on the Olympic flag?",
+      "options": [
+        "Four",
+        "Five",
+        "Six",
+        "Seven"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-e05",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "How many points is a free throw worth in basketball?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-m01",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "Which country has won the most FIFA World Cups?",
+      "options": [
+        "Germany",
+        "Italy",
+        "Brazil",
+        "Argentina"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-m02",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "How many holes are in a standard round of golf?",
+      "options": [
+        "Nine",
+        "Eighteen",
+        "Thirty-six",
+        "Seventy-two"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-m03",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "How many players from one team are on the field in cricket?",
+      "options": [
+        "Nine",
+        "Ten",
+        "Eleven",
+        "Twelve"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-m04",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "Which city hosted the 2016 Summer Olympics?",
+      "options": [
+        "London",
+        "Rio de Janeiro",
+        "Tokyo",
+        "Athens"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-m05",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "How many points is a touchdown worth in American football?",
+      "options": [
+        "Three",
+        "Six",
+        "Seven",
+        "Nine"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-h01",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "Which player has won the most Ballon d'Or awards?",
+      "options": [
+        "Cristiano Ronaldo",
+        "Lionel Messi",
+        "Johan Cruyff",
+        "Michel Platini"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-h02",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "What is the maximum break in a game of snooker?",
+      "options": [
+        "147",
+        "155",
+        "171",
+        "180"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-h03",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "How wide is a basketball hoop in inches?",
+      "options": [
+        "16",
+        "18",
+        "20",
+        "24"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-h04",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "What is the highest score possible with three darts?",
+      "options": [
+        "170",
+        "171",
+        "180",
+        "181"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-h05",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "Who holds the men's 100 metres world record?",
+      "options": [
+        "Usain Bolt",
+        "Tyson Gay",
+        "Yohan Blake",
+        "Jim Hines"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "sci-e06",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "Which organ pumps blood around the human body?",
+      "options": [
+        "Lungs",
+        "Heart",
+        "Liver",
+        "Kidneys"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-e07",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "What do bees collect from flowers to make honey?",
+      "options": [
+        "Nectar",
+        "Dew",
+        "Sap",
+        "Pollen only"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "sci-e08",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "Which part of a plant usually absorbs water from the soil?",
+      "options": [
+        "Leaves",
+        "Flowers",
+        "Roots",
+        "Stem"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-e09",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "What is H2O commonly known as?",
+      "options": [
+        "Salt",
+        "Hydrogen",
+        "Oxygen",
+        "Water"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "sci-e10",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "Which natural satellite orbits Earth?",
+      "options": [
+        "The Moon",
+        "Phobos",
+        "Europa",
+        "Titan"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "sci-e11",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "What do humans breathe in that their bodies need?",
+      "options": [
+        "Carbon dioxide",
+        "Oxygen",
+        "Helium",
+        "Methane"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-e12",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "Which animal is a mammal that lays eggs?",
+      "options": [
+        "Dolphin",
+        "Bat",
+        "Platypus",
+        "Whale"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-e13",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "What is the center of our solar system?",
+      "options": [
+        "Earth",
+        "The Moon",
+        "Jupiter",
+        "The Sun"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "sci-e14",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "Which sense organ is used for hearing?",
+      "options": [
+        "Ear",
+        "Eye",
+        "Nose",
+        "Tongue"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "sci-e15",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "What force slows objects when surfaces rub together?",
+      "options": [
+        "Gravity",
+        "Friction",
+        "Buoyancy",
+        "Thrust"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-e16",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "Which state of matter has a fixed shape and volume?",
+      "options": [
+        "Gas",
+        "Liquid",
+        "Solid",
+        "Plasma"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-e17",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "What is the main source of energy for Earth?",
+      "options": [
+        "The Sun",
+        "The Moon",
+        "Volcanoes",
+        "Wind"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "sci-e18",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "Which vitamin can the body produce with help from sunlight?",
+      "options": [
+        "Vitamin A",
+        "Vitamin B12",
+        "Vitamin C",
+        "Vitamin D"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "sci-e19",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "What do we call animals that eat only plants?",
+      "options": [
+        "Carnivores",
+        "Herbivores",
+        "Omnivores",
+        "Decomposers"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-e20",
+      "topic": "science",
+      "difficulty": "easy",
+      "text": "Which instrument measures temperature?",
+      "options": [
+        "Barometer",
+        "Ruler",
+        "Thermometer",
+        "Compass"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-m06",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "What is the pH of pure water at room temperature, approximately?",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "10"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-m07",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "Which planet has the most prominent ring system?",
+      "options": [
+        "Mars",
+        "Saturn",
+        "Earth",
+        "Mercury"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-m08",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "What is the basic unit of life?",
+      "options": [
+        "Atom",
+        "Tissue",
+        "Organ",
+        "Cell"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "sci-m09",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "Which gas makes up most of Earth's atmosphere?",
+      "options": [
+        "Nitrogen",
+        "Oxygen",
+        "Carbon dioxide",
+        "Argon"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "sci-m10",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "What is the SI unit of force?",
+      "options": [
+        "Joule",
+        "Newton",
+        "Watt",
+        "Pascal"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-m11",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "Which blood cells help the body fight infections?",
+      "options": [
+        "Red blood cells",
+        "Platelets",
+        "White blood cells",
+        "Plasma cells only"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-m12",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "What is the process by which a liquid changes into a gas at its surface?",
+      "options": [
+        "Freezing",
+        "Condensation",
+        "Sublimation",
+        "Evaporation"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "sci-m13",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "Which organ filters blood to produce urine?",
+      "options": [
+        "Kidney",
+        "Pancreas",
+        "Spleen",
+        "Stomach"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "sci-m14",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "What is the chemical symbol for sodium?",
+      "options": [
+        "So",
+        "Na",
+        "S",
+        "Sd"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-m15",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "Which type of energy is stored in a stretched spring?",
+      "options": [
+        "Thermal",
+        "Sound",
+        "Elastic potential",
+        "Nuclear"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-m16",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "What is the approximate speed of sound in air at room temperature?",
+      "options": [
+        "34 m/s",
+        "150 m/s",
+        "1,500 m/s",
+        "343 m/s"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "sci-m17",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "Which molecule carries genetic information in most living organisms?",
+      "options": [
+        "DNA",
+        "ATP",
+        "Glucose",
+        "Hemoglobin"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "sci-m18",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "What is the name of the boundary around a cell that regulates what enters and leaves?",
+      "options": [
+        "Cell wall only",
+        "Cell membrane",
+        "Nucleolus",
+        "Chromosome"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-m19",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "Which planet is known for its Great Red Spot?",
+      "options": [
+        "Neptune",
+        "Venus",
+        "Jupiter",
+        "Uranus"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-m20",
+      "topic": "science",
+      "difficulty": "medium",
+      "text": "What is the SI unit of electrical resistance?",
+      "options": [
+        "Volt",
+        "Ampere",
+        "Watt",
+        "Ohm"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "sci-h06",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "Which particle has a negative electric charge?",
+      "options": [
+        "Electron",
+        "Proton",
+        "Neutron",
+        "Photon"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "sci-h07",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "What is the approximate Avogadro constant per mole?",
+      "options": [
+        "6.02 × 10^20",
+        "6.02 × 10^23",
+        "3.00 × 10^8",
+        "9.81 × 10^2"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-h08",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "Which law states that pressure and volume are inversely related for a fixed amount of gas at constant temperature?",
+      "options": [
+        "Charles's law",
+        "Ohm's law",
+        "Boyle's law",
+        "Faraday's law"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-h09",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "What is the SI base unit of luminous intensity?",
+      "options": [
+        "Lux",
+        "Lumen",
+        "Candela-hour",
+        "Candela"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "sci-h10",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "Which enzyme begins starch digestion in the human mouth?",
+      "options": [
+        "Amylase",
+        "Pepsin",
+        "Lipase",
+        "Lactase"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "sci-h11",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "What is the oxidation state of oxygen in most compounds?",
+      "options": [
+        "−1",
+        "−2",
+        "+1",
+        "+2"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-h12",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "Which subatomic particle determines an element's atomic number?",
+      "options": [
+        "Neutron",
+        "Electron",
+        "Proton",
+        "Quark"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-h13",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "What is the name of the boundary beyond which nothing can escape a black hole?",
+      "options": [
+        "Accretion disk",
+        "Singularity",
+        "Photon sphere",
+        "Event horizon"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "sci-h14",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "Which layer of Earth's atmosphere contains most of the ozone layer?",
+      "options": [
+        "Stratosphere",
+        "Troposphere",
+        "Mesosphere",
+        "Thermosphere"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "sci-h15",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "What is the SI unit of magnetic flux?",
+      "options": [
+        "Tesla",
+        "Weber",
+        "Henry",
+        "Gauss"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-h16",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "Which process produces most of the Sun's energy?",
+      "options": [
+        "Chemical combustion",
+        "Radioactive decay",
+        "Nuclear fusion",
+        "Nuclear fission"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "sci-h17",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "Which RNA type carries amino acids to the ribosome during protein synthesis?",
+      "options": [
+        "mRNA",
+        "rRNA",
+        "snRNA",
+        "tRNA"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "sci-h18",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "What is the approximate pH of a 0.1 M strong acid such as HCl?",
+      "options": [
+        "1",
+        "2",
+        "7",
+        "13"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "sci-h19",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "Which principle explains why a body immersed in fluid experiences an upward buoyant force?",
+      "options": [
+        "Bernoulli's principle",
+        "Archimedes' principle",
+        "Pascal's law",
+        "Kepler's law"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "sci-h20",
+      "topic": "science",
+      "difficulty": "hard",
+      "text": "Which scientist formulated the three laws of planetary motion?",
+      "options": [
+        "Galileo Galilei",
+        "Isaac Newton",
+        "Johannes Kepler",
+        "Michael Faraday"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-e06",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Which ancient civilization built the Colosseum?",
+      "options": [
+        "Ancient Greeks",
+        "Ancient Egyptians",
+        "Persians",
+        "Romans"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "his-e07",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Who was known as the Maid of Orléans?",
+      "options": [
+        "Joan of Arc",
+        "Cleopatra",
+        "Boudica",
+        "Catherine the Great"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "his-e08",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Which ancient writing system used wedge-shaped marks on clay tablets?",
+      "options": [
+        "Hieroglyphics",
+        "Cuneiform",
+        "Latin",
+        "Sanskrit"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-e09",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "In which country did the ancient Olympic Games originate?",
+      "options": [
+        "Italy",
+        "Egypt",
+        "Greece",
+        "China"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-e10",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Who was the British prime minister for much of World War II?",
+      "options": [
+        "Neville Chamberlain",
+        "Clement Attlee",
+        "Anthony Eden",
+        "Winston Churchill"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "his-e11",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Which civilization built the city of Tenochtitlan?",
+      "options": [
+        "Aztec",
+        "Inca",
+        "Maya",
+        "Phoenician"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "his-e12",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "What was the name of the trade route connecting East Asia with Europe?",
+      "options": [
+        "Amber Road",
+        "Silk Road",
+        "Royal Road only",
+        "Spice Canal"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-e13",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Who was the first person to walk on the Moon?",
+      "options": [
+        "Buzz Aldrin",
+        "Yuri Gagarin",
+        "Neil Armstrong",
+        "Michael Collins"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-e14",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Which document begins with 'We the People'?",
+      "options": [
+        "Magna Carta",
+        "Declaration of the Rights of Man",
+        "Bill of Rights",
+        "United States Constitution"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "his-e15",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Which city was the capital of the Byzantine Empire?",
+      "options": [
+        "Constantinople",
+        "Athens",
+        "Alexandria",
+        "Rome"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "his-e16",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Who was the Egyptian queen associated with Julius Caesar and Mark Antony?",
+      "options": [
+        "Nefertiti",
+        "Cleopatra VII",
+        "Hatshepsut",
+        "Sobekneferu"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-e17",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Which wall was built across northern Britain by the Romans?",
+      "options": [
+        "Berlin Wall",
+        "Great Wall of China",
+        "Hadrian's Wall",
+        "Antonine Wall only"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-e18",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "What was the name of the first artificial satellite launched into space?",
+      "options": [
+        "Explorer 1",
+        "Apollo 11",
+        "Vostok 1",
+        "Sputnik 1"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "his-e19",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "Which country gifted the Statue of Liberty to the United States?",
+      "options": [
+        "France",
+        "Spain",
+        "Italy",
+        "Canada"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "his-e20",
+      "topic": "history",
+      "difficulty": "easy",
+      "text": "The ancient city of Troy is located in which modern-day country?",
+      "options": [
+        "Greece",
+        "Turkey",
+        "Egypt",
+        "Syria"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-m06",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Which treaty formally ended World War I between Germany and the Allied Powers?",
+      "options": [
+        "Treaty of Paris",
+        "Treaty of Utrecht",
+        "Treaty of Versailles",
+        "Treaty of Tordesillas"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-m07",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Who was the first emperor of a unified China?",
+      "options": [
+        "Kublai Khan",
+        "Han Wudi",
+        "Sun Yat-sen",
+        "Qin Shi Huang"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "his-m08",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Which revolution began in France in 1789?",
+      "options": [
+        "French Revolution",
+        "Industrial Revolution",
+        "Glorious Revolution",
+        "October Revolution"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "his-m09",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Who led the Haitian Revolution and became a key abolitionist leader?",
+      "options": [
+        "Simón Bolívar",
+        "Toussaint Louverture",
+        "José de San Martín",
+        "Francisco Pizarro"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-m10",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Which civilization developed the city of Tikal?",
+      "options": [
+        "Inca",
+        "Aztec",
+        "Maya",
+        "Olmec only"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-m11",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "The Rosetta Stone helped scholars decipher which script?",
+      "options": [
+        "Linear B",
+        "Cuneiform",
+        "Phoenician",
+        "Egyptian hieroglyphs"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "his-m12",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Who was the first woman to win a Nobel Prize?",
+      "options": [
+        "Marie Curie",
+        "Ada Lovelace",
+        "Florence Nightingale",
+        "Bertha von Suttner"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "his-m13",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Which event is commonly considered the start of the Protestant Reformation?",
+      "options": [
+        "Council of Trent",
+        "Martin Luther's Ninety-five Theses",
+        "Edict of Nantes",
+        "Peace of Augsburg"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-m14",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Which empire was ruled by Suleiman the Magnificent?",
+      "options": [
+        "Mughal Empire",
+        "Safavid Empire",
+        "Ottoman Empire",
+        "Mongol Empire"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-m15",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Who was the leader of India's nonviolent independence movement widely known as Mahatma?",
+      "options": [
+        "Jawaharlal Nehru",
+        "Subhas Chandra Bose",
+        "Sardar Patel",
+        "Mohandas K. Gandhi"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "his-m16",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Which US document proclaimed the colonies' independence in 1776?",
+      "options": [
+        "Declaration of Independence",
+        "Articles of Confederation",
+        "Emancipation Proclamation",
+        "Federalist Papers"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "his-m17",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Which civilization used quipus to record information?",
+      "options": [
+        "Aztec",
+        "Inca",
+        "Roman",
+        "Minoan"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-m18",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "What was the name of the ship Charles Darwin sailed on during his famous voyage?",
+      "options": [
+        "Endeavour",
+        "Discovery",
+        "HMS Beagle",
+        "Golden Hind"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-m19",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Which conflict was fought between the houses of Lancaster and York?",
+      "options": [
+        "Thirty Years' War",
+        "War of Spanish Succession",
+        "English Civil War",
+        "Wars of the Roses"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "his-m20",
+      "topic": "history",
+      "difficulty": "medium",
+      "text": "Who was the first secretary-general of the United Nations?",
+      "options": [
+        "Trygve Lie",
+        "Dag Hammarskjöld",
+        "U Thant",
+        "Kurt Waldheim"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "his-h06",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Which peace settlement ended the Thirty Years' War in 1648?",
+      "options": [
+        "Treaty of Tordesillas",
+        "Peace of Westphalia",
+        "Treaty of Paris",
+        "Congress of Vienna"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-h07",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Who founded the Mali Empire and is famous for his pilgrimage to Mecca?",
+      "options": [
+        "Askia Muhammad",
+        "Sundiata Keita",
+        "Mansa Musa",
+        "Shaka Zulu"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-h08",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Which Byzantine emperor commissioned the Corpus Juris Civilis?",
+      "options": [
+        "Constantine I",
+        "Theodosius I",
+        "Basil II",
+        "Justinian I"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "his-h09",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Which battle in 1066 led to the Norman conquest of England?",
+      "options": [
+        "Battle of Hastings",
+        "Battle of Agincourt",
+        "Battle of Bosworth Field",
+        "Battle of Bannockburn"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "his-h10",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Which dynasty built much of the existing Great Wall of China?",
+      "options": [
+        "Qing",
+        "Ming",
+        "Tang",
+        "Song"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-h11",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Who was the Carthaginian general who crossed the Alps during the Second Punic War?",
+      "options": [
+        "Scipio Africanus",
+        "Hasdrubal",
+        "Hannibal",
+        "Hamilcar Barca"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-h12",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Which 1884–85 conference formalized European rules for colonization in Africa?",
+      "options": [
+        "Congress of Vienna",
+        "Yalta Conference",
+        "Potsdam Conference",
+        "Berlin Conference"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "his-h13",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Which ruler issued the Edict of Milan with Licinius in 313 CE?",
+      "options": [
+        "Constantine the Great",
+        "Nero",
+        "Diocletian",
+        "Trajan"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "his-h14",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "What was the capital of the Inca Empire?",
+      "options": [
+        "Machu Picchu",
+        "Cusco",
+        "Quito",
+        "Lima"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-h15",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Which battle in 1815 ended Napoleon's rule of the Hundred Days?",
+      "options": [
+        "Austerlitz",
+        "Borodino",
+        "Waterloo",
+        "Leipzig"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-h16",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Who was the last ruler of the Ptolemaic Kingdom of Egypt?",
+      "options": [
+        "Nefertiti",
+        "Hatshepsut",
+        "Arsinoe II",
+        "Cleopatra VII"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "his-h17",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Which ancient Greek historian is often called the 'Father of History'?",
+      "options": [
+        "Herodotus",
+        "Thucydides",
+        "Xenophon",
+        "Plutarch"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "his-h18",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "The Meiji era began in Japan in which year?",
+      "options": [
+        "1848",
+        "1868",
+        "1889",
+        "1912"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "his-h19",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Which empire's capital was Tenochtitlan?",
+      "options": [
+        "Inca",
+        "Maya",
+        "Aztec",
+        "Olmec"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "his-h20",
+      "topic": "history",
+      "difficulty": "hard",
+      "text": "Which 1978 agreement created a framework for peace between Egypt and Israel?",
+      "options": [
+        "Camp David Accords",
+        "Oslo Accords",
+        "Treaty of Lausanne",
+        "Balfour Declaration"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-e06",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which continent is the Sahara Desert located in?",
+      "options": [
+        "Asia",
+        "Africa",
+        "Australia",
+        "South America"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-e07",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "What is the capital of Japan?",
+      "options": [
+        "Kyoto",
+        "Osaka",
+        "Tokyo",
+        "Hiroshima"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-e08",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which country is famous for the city of Rio de Janeiro?",
+      "options": [
+        "Argentina",
+        "Portugal",
+        "Mexico",
+        "Brazil"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "geo-e09",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which mountain range separates much of Europe from Asia in Russia?",
+      "options": [
+        "Ural Mountains",
+        "Andes",
+        "Alps",
+        "Rockies"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-e10",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which country has a maple leaf on its national flag?",
+      "options": [
+        "Australia",
+        "Canada",
+        "Denmark",
+        "Ireland"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-e11",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which sea lies between Europe and Africa?",
+      "options": [
+        "Caribbean Sea",
+        "Black Sea",
+        "Mediterranean Sea",
+        "Baltic Sea"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-e12",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "What is the capital of India?",
+      "options": [
+        "Mumbai",
+        "Kolkata",
+        "Chennai",
+        "New Delhi"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "geo-e13",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which continent is the Amazon rainforest primarily located in?",
+      "options": [
+        "South America",
+        "Africa",
+        "Asia",
+        "Europe"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-e14",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which country is shaped like a boot on many maps?",
+      "options": [
+        "Greece",
+        "Italy",
+        "Norway",
+        "Thailand"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-e15",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which US state is known as the Aloha State?",
+      "options": [
+        "Alaska",
+        "Florida",
+        "Hawaii",
+        "Texas"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-e16",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which is the smallest continent by land area in the commonly used seven-continent model?",
+      "options": [
+        "Europe",
+        "Antarctica",
+        "South America",
+        "Australia"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "geo-e17",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "What is the capital of Spain?",
+      "options": [
+        "Madrid",
+        "Barcelona",
+        "Seville",
+        "Valencia"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-e18",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which river is often considered the longest in South America?",
+      "options": [
+        "Paraná",
+        "Amazon",
+        "Orinoco",
+        "São Francisco"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-e19",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which country contains the city of Marrakech?",
+      "options": [
+        "Tunisia",
+        "Algeria",
+        "Morocco",
+        "Libya"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-e20",
+      "topic": "geography",
+      "difficulty": "easy",
+      "text": "Which ocean borders the east coast of the United States?",
+      "options": [
+        "Pacific",
+        "Indian",
+        "Arctic",
+        "Atlantic"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "geo-m06",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which African country has the largest population?",
+      "options": [
+        "Nigeria",
+        "Egypt",
+        "South Africa",
+        "Kenya"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-m07",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "What is the capital of Iceland?",
+      "options": [
+        "Oslo",
+        "Reykjavík",
+        "Helsinki",
+        "Stockholm"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-m08",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which river runs through Baghdad?",
+      "options": [
+        "Nile",
+        "Jordan",
+        "Tigris",
+        "Euphrates only"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-m09",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which country has the most natural lakes?",
+      "options": [
+        "Finland",
+        "Russia",
+        "Sweden",
+        "Canada"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "geo-m10",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which is the highest mountain in Africa?",
+      "options": [
+        "Mount Kilimanjaro",
+        "Mount Kenya",
+        "Mount Stanley",
+        "Mount Elgon"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-m11",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which country is home to the ancient city of Petra?",
+      "options": [
+        "Lebanon",
+        "Jordan",
+        "Oman",
+        "Yemen"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-m12",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "What is the capital of Portugal?",
+      "options": [
+        "Porto",
+        "Madrid",
+        "Lisbon",
+        "Faro"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-m13",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which island country lies just southeast of India?",
+      "options": [
+        "Maldives",
+        "Mauritius",
+        "Seychelles",
+        "Sri Lanka"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "geo-m14",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which strait connects the Persian Gulf to the Gulf of Oman?",
+      "options": [
+        "Strait of Hormuz",
+        "Strait of Dover",
+        "Bering Strait",
+        "Dardanelles"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-m15",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which country has the cities of Nairobi and Mombasa?",
+      "options": [
+        "Tanzania",
+        "Kenya",
+        "Uganda",
+        "Rwanda"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-m16",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "What is the capital of South Korea?",
+      "options": [
+        "Busan",
+        "Incheon",
+        "Seoul",
+        "Daegu"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-m17",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which European river flows through Vienna, Bratislava, Budapest, and Belgrade?",
+      "options": [
+        "Rhine",
+        "Seine",
+        "Elbe",
+        "Danube"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "geo-m18",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which country is home to the Atacama Desert?",
+      "options": [
+        "Chile",
+        "Peru",
+        "Bolivia",
+        "Ecuador"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-m19",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which country contains the region of Transylvania?",
+      "options": [
+        "Hungary",
+        "Romania",
+        "Bulgaria",
+        "Serbia"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-m20",
+      "topic": "geography",
+      "difficulty": "medium",
+      "text": "Which African lake is the source region for the White Nile?",
+      "options": [
+        "Lake Chad",
+        "Lake Malawi",
+        "Lake Victoria",
+        "Lake Turkana"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-h06",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which country has the exclave of Kaliningrad on the Baltic Sea?",
+      "options": [
+        "Lithuania",
+        "Poland",
+        "Belarus",
+        "Russia"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "geo-h07",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "What is the world's largest island that is not considered a continent?",
+      "options": [
+        "Greenland",
+        "Borneo",
+        "New Guinea",
+        "Madagascar"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-h08",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which country contains the geographic region known as the Wakhan Corridor?",
+      "options": [
+        "Pakistan",
+        "Afghanistan",
+        "Tajikistan",
+        "Uzbekistan"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-h09",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which river forms much of the border between the United States and Mexico?",
+      "options": [
+        "Colorado",
+        "Mississippi",
+        "Rio Grande",
+        "Columbia"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-h10",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which is the world's highest uninterrupted waterfall?",
+      "options": [
+        "Tugela Falls",
+        "Iguazu Falls",
+        "Niagara Falls",
+        "Angel Falls"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "geo-h11",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which capital city lies on the River Liffey?",
+      "options": [
+        "Dublin",
+        "Edinburgh",
+        "Cardiff",
+        "Belfast"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-h12",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which country was formerly known as Dahomey?",
+      "options": [
+        "Togo",
+        "Benin",
+        "Burkina Faso",
+        "Gabon"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-h13",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which desert spans parts of Mongolia and northern China?",
+      "options": [
+        "Sahara",
+        "Karakum",
+        "Gobi",
+        "Kalahari"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-h14",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which African country has coastlines on both the Atlantic and Indian oceans?",
+      "options": [
+        "Angola",
+        "Somalia",
+        "Mozambique",
+        "South Africa"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "geo-h15",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "What is the capital of Bhutan?",
+      "options": [
+        "Thimphu",
+        "Kathmandu",
+        "Paro",
+        "Dhaka"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-h16",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which country administers the Faroe Islands?",
+      "options": [
+        "Norway",
+        "Denmark",
+        "Iceland",
+        "Sweden"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "geo-h17",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which lake is shared by Tanzania, Uganda, and Kenya?",
+      "options": [
+        "Lake Chad",
+        "Lake Tanganyika",
+        "Lake Victoria",
+        "Lake Albert"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "geo-h18",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which country has the world's highest administrative capital, La Paz, as its seat of government?",
+      "options": [
+        "Peru",
+        "Ecuador",
+        "Colombia",
+        "Bolivia"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "geo-h19",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which channel separates Madagascar from mainland Africa?",
+      "options": [
+        "Mozambique Channel",
+        "English Channel",
+        "Yucatán Channel",
+        "Luzon Strait"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "geo-h20",
+      "topic": "geography",
+      "difficulty": "hard",
+      "text": "Which country is the only one whose territory includes the entire southern shore of the Caspian Sea?",
+      "options": [
+        "Azerbaijan",
+        "Iran",
+        "Kazakhstan",
+        "Turkmenistan"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-e06",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "What is the name of Mickey Mouse's dog?",
+      "options": [
+        "Pluto",
+        "Goofy",
+        "Scooby-Doo",
+        "Brian"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-e07",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "Which superhero is also known as the Dark Knight?",
+      "options": [
+        "Superman",
+        "Batman",
+        "Spider-Man",
+        "The Flash"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-e08",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "In The Lion King, what is Simba's father's name?",
+      "options": [
+        "Scar",
+        "Timon",
+        "Mufasa",
+        "Rafiki"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-e09",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "Which animated film features a snowman named Olaf?",
+      "options": [
+        "Toy Story",
+        "Shrek",
+        "Finding Nemo",
+        "Frozen"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ent-e10",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "What is the name of the cowboy in Toy Story?",
+      "options": [
+        "Woody",
+        "Buzz Lightyear",
+        "Rex",
+        "Andy"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-e11",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "Which singer is known as the 'King of Pop'?",
+      "options": [
+        "Elvis Presley",
+        "Michael Jackson",
+        "Prince",
+        "Freddie Mercury"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-e12",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "Which instrument has black and white keys and is often used in classical music?",
+      "options": [
+        "Violin",
+        "Flute",
+        "Piano",
+        "Trumpet"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-e13",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "What is the name of the fictional school Harry Potter attends?",
+      "options": [
+        "Beauxbatons",
+        "Durmstrang",
+        "Ilvermorny",
+        "Hogwarts"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ent-e14",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "Which superhero uses a shield with a star?",
+      "options": [
+        "Captain America",
+        "Iron Man",
+        "Thor",
+        "Hulk"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-e15",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "Which movie franchise features a character named Darth Vader?",
+      "options": [
+        "Star Trek",
+        "Star Wars",
+        "Dune",
+        "The Matrix"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-e16",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "Which character lives in a pineapple under the sea?",
+      "options": [
+        "Patrick Star",
+        "Squidward",
+        "SpongeBob SquarePants",
+        "Mr. Krabs"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-e17",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "Which Disney princess has a glass slipper?",
+      "options": [
+        "Jasmine",
+        "Mulan",
+        "Tiana",
+        "Cinderella"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ent-e18",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "What is the name of the kingdom in the film Frozen?",
+      "options": [
+        "Arendelle",
+        "Genovia",
+        "Narnia",
+        "Agrabah"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-e19",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "Which singer released the album 1989?",
+      "options": [
+        "Adele",
+        "Taylor Swift",
+        "Beyoncé",
+        "Lady Gaga"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-e20",
+      "topic": "entertainment",
+      "difficulty": "easy",
+      "text": "Which sport is central to the film Space Jam?",
+      "options": [
+        "Baseball",
+        "Soccer",
+        "Basketball",
+        "Hockey"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-m06",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Who played Jack in the 1997 film Titanic?",
+      "options": [
+        "Brad Pitt",
+        "Tom Cruise",
+        "Matt Damon",
+        "Leonardo DiCaprio"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ent-m07",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Which composer wrote the Four Seasons violin concertos?",
+      "options": [
+        "Antonio Vivaldi",
+        "Johann Sebastian Bach",
+        "Wolfgang Amadeus Mozart",
+        "Ludwig van Beethoven"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-m08",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Which series features the fictional continent of Westeros?",
+      "options": [
+        "The Wheel of Time",
+        "Game of Thrones",
+        "The Crown",
+        "The Expanse"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-m09",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Who created the comic-book character Spider-Man with artist Steve Ditko?",
+      "options": [
+        "Stan Lee",
+        "Jack Kirby",
+        "Jerry Siegel",
+        "Bob Kane"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-m10",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Which film features the quote 'Here's looking at you, kid'?",
+      "options": [
+        "Citizen Kane",
+        "The Godfather",
+        "Casablanca",
+        "Gone with the Wind"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-m11",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "What is the name of the fictional archaeologist played by Harrison Ford?",
+      "options": [
+        "Rick Deckard",
+        "Han Solo",
+        "John McClane",
+        "Indiana Jones"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ent-m12",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Which singer was the lead vocalist of Nirvana?",
+      "options": [
+        "Kurt Cobain",
+        "Eddie Vedder",
+        "Chris Cornell",
+        "Axl Rose"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-m13",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Which animated series features the town of Springfield?",
+      "options": [
+        "Family Guy",
+        "The Simpsons",
+        "South Park",
+        "Futurama"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-m14",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Who composed the score for the film Jaws?",
+      "options": [
+        "Hans Zimmer",
+        "Danny Elfman",
+        "John Williams",
+        "Ennio Morricone"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-m15",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Which actor played the title character in the 2008 film Iron Man?",
+      "options": [
+        "Chris Evans",
+        "Christian Bale",
+        "Edward Norton",
+        "Robert Downey Jr."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ent-m16",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Which musical features the songs 'Memory' and 'Jellicle Songs for Jellicle Cats'?",
+      "options": [
+        "Cats",
+        "Les Misérables",
+        "Wicked",
+        "Chicago"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-m17",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Which director made the film Pulp Fiction?",
+      "options": [
+        "Martin Scorsese",
+        "Quentin Tarantino",
+        "David Fincher",
+        "Paul Thomas Anderson"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-m18",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Which artist painted The Persistence of Memory?",
+      "options": [
+        "Pablo Picasso",
+        "Claude Monet",
+        "Salvador Dalí",
+        "Edvard Munch"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-m19",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "What is the name of the fictional newspaper in Superman stories?",
+      "options": [
+        "The Daily Planet",
+        "The Daily Bugle",
+        "Gotham Gazette",
+        "The Globe"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-m20",
+      "topic": "entertainment",
+      "difficulty": "medium",
+      "text": "Which TV sitcom features Sheldon Cooper and Leonard Hofstadter?",
+      "options": [
+        "How I Met Your Mother",
+        "The Big Bang Theory",
+        "Community",
+        "Scrubs"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-h06",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which film was the first non-English-language movie to win the Academy Award for Best Picture?",
+      "options": [
+        "Roma",
+        "Crouching Tiger, Hidden Dragon",
+        "Parasite",
+        "Life Is Beautiful"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-h07",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Who composed the opera The Magic Flute?",
+      "options": [
+        "Giuseppe Verdi",
+        "Richard Wagner",
+        "Franz Schubert",
+        "Wolfgang Amadeus Mozart"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ent-h08",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which 1927 film is famous for being a landmark in sound cinema, featuring Al Jolson?",
+      "options": [
+        "The Jazz Singer",
+        "Metropolis",
+        "The General",
+        "Sunrise"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-h09",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which filmmaker directed the Three Colours trilogy?",
+      "options": [
+        "Krzysztof Kieślowski",
+        "Agnès Varda",
+        "Federico Fellini",
+        "Andrei Tarkovsky"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-h10",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Who was the first artist to win the Grammy Award for Album of the Year three times?",
+      "options": [
+        "Frank Sinatra",
+        "Stevie Wonder",
+        "Paul Simon",
+        "Taylor Swift"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-h11",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which novel by Anthony Burgess inspired Stanley Kubrick's film about Alex and his droogs?",
+      "options": [
+        "1984",
+        "Brave New World",
+        "A Clockwork Orange",
+        "Fahrenheit 451"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-h12",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which Japanese filmmaker directed Seven Samurai?",
+      "options": [
+        "Yasujirō Ozu",
+        "Kenji Mizoguchi",
+        "Hayao Miyazaki",
+        "Akira Kurosawa"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "ent-h13",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which composer wrote the ballet The Rite of Spring?",
+      "options": [
+        "Igor Stravinsky",
+        "Sergei Prokofiev",
+        "Pyotr Ilyich Tchaikovsky",
+        "Claude Debussy"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-h14",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which actor portrayed T.E. Lawrence in David Lean's Lawrence of Arabia?",
+      "options": [
+        "Peter O'Toole",
+        "Alec Guinness",
+        "Omar Sharif",
+        "Anthony Quinn"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-h15",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which band released the 1967 album The Velvet Underground & Nico?",
+      "options": [
+        "The Doors",
+        "The Velvet Underground",
+        "The Kinks",
+        "The Who"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-h16",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which film won the Palme d'Or at Cannes in 2019?",
+      "options": [
+        "The Square",
+        "Shoplifters",
+        "Parasite",
+        "Titane"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-h17",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which artist created the sculpture The Thinker?",
+      "options": [
+        "Auguste Rodin",
+        "Donatello",
+        "Gian Lorenzo Bernini",
+        "Henry Moore"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "ent-h18",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Who directed the 1941 film Citizen Kane?",
+      "options": [
+        "John Ford",
+        "Orson Welles",
+        "Billy Wilder",
+        "Howard Hawks"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "ent-h19",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which composer wrote the orchestral work Also sprach Zarathustra, famously used in 2001: A Space Odyssey?",
+      "options": [
+        "Gustav Mahler",
+        "Antonín Dvořák",
+        "Richard Strauss",
+        "Richard Wagner"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "ent-h20",
+      "topic": "entertainment",
+      "difficulty": "hard",
+      "text": "Which British comedy troupe created Monty Python's Flying Circus?",
+      "options": [
+        "The Goons",
+        "Beyond the Fringe",
+        "The Cambridge Footlights Revue",
+        "Monty Python"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "spo-e06",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "How many sets are usually needed to win a men's Grand Slam tennis match?",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-e07",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "In basketball, how many points is a shot made from beyond the three-point line worth?",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "One"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-e08",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "Which country hosted the 2010 FIFA World Cup?",
+      "options": [
+        "Brazil",
+        "Germany",
+        "South Africa",
+        "France"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-e09",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "What colour card means a player is sent off in soccer?",
+      "options": [
+        "Yellow",
+        "Blue",
+        "Red",
+        "Green"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-e10",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "Which sport uses a shuttlecock?",
+      "options": [
+        "Badminton",
+        "Squash",
+        "Table tennis",
+        "Volleyball"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-e11",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "How many strikes make an out in baseball?",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Five"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-e12",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "In which sport would you perform a slam dunk?",
+      "options": [
+        "Rugby",
+        "Cricket",
+        "Basketball",
+        "Golf"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-e13",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "What is the name of the line a runner must cross to finish a race?",
+      "options": [
+        "Starting line",
+        "Touchline",
+        "Service line",
+        "Finish line"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "spo-e14",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "Which sport uses the terms checkmate and castling?",
+      "options": [
+        "Chess",
+        "Fencing",
+        "Archery",
+        "Wrestling"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-e15",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "How many players are on court for one volleyball team during standard indoor play?",
+      "options": [
+        "Five",
+        "Six",
+        "Seven",
+        "Eight"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-e16",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "Which country is associated with the martial art taekwondo?",
+      "options": [
+        "Japan",
+        "China",
+        "South Korea",
+        "Thailand"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-e17",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "In cricket, what is a score of 100 runs by one batter called?",
+      "options": [
+        "A century",
+        "A double",
+        "A hat-trick",
+        "A maiden"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-e18",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "Which sport features a pommel horse?",
+      "options": [
+        "Cycling",
+        "Gymnastics",
+        "Rowing",
+        "Fencing"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-e19",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "What shape is a standard soccer ball traditionally made to resemble?",
+      "options": [
+        "Cube",
+        "Oval",
+        "Sphere",
+        "Cylinder"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-e20",
+      "topic": "sports",
+      "difficulty": "easy",
+      "text": "Which race is run over 42.195 kilometres?",
+      "options": [
+        "Sprint",
+        "Hurdles",
+        "Relay",
+        "Marathon"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "spo-m06",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "In Formula One, what flag signals the end of a race?",
+      "options": [
+        "Chequered flag",
+        "Red flag",
+        "Yellow flag",
+        "Blue flag"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-m07",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "Which country won the men's FIFA World Cup in 2018?",
+      "options": [
+        "Croatia",
+        "France",
+        "Brazil",
+        "Germany"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-m08",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "In baseball, how many bases must a player touch to score a home run?",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Five"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-m09",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "What is the standard length of an Olympic swimming pool?",
+      "options": [
+        "25 metres",
+        "40 metres",
+        "50 yards",
+        "50 metres"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "spo-m10",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "Which Grand Slam tennis tournament is played on clay courts?",
+      "options": [
+        "French Open",
+        "Wimbledon",
+        "US Open",
+        "Australian Open"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-m11",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "In rugby union, how many points is a try worth?",
+      "options": [
+        "Three",
+        "Five",
+        "Six",
+        "Seven"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-m12",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "Which chess piece moves in an L-shape?",
+      "options": [
+        "Bishop",
+        "Rook",
+        "Knight",
+        "Queen"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-m13",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "Which country hosted the 2008 Summer Olympics?",
+      "options": [
+        "Greece",
+        "Australia",
+        "Japan",
+        "China"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "spo-m14",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "In golf, what is one stroke under par on a hole called?",
+      "options": [
+        "Birdie",
+        "Bogey",
+        "Eagle",
+        "Albatross"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-m15",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "Which athlete is known for winning eight gold medals at the 2008 Beijing Olympics?",
+      "options": [
+        "Carl Lewis",
+        "Michael Phelps",
+        "Mark Spitz",
+        "Ian Thorpe"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-m16",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "In volleyball, what is the maximum number of team hits before returning the ball over the net, excluding a block touch?",
+      "options": [
+        "Two",
+        "Four",
+        "Three",
+        "Five"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-m17",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "Which country is the origin of sumo wrestling?",
+      "options": [
+        "Mongolia",
+        "China",
+        "South Korea",
+        "Japan"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "spo-m18",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "What is the term for three wickets taken by a bowler in three consecutive deliveries in cricket?",
+      "options": [
+        "Hat-trick",
+        "Maiden over",
+        "Yorker",
+        "Googly"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-m19",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "Which event combines swimming, cycling, and running?",
+      "options": [
+        "Pentathlon",
+        "Triathlon",
+        "Decathlon",
+        "Heptathlon"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-m20",
+      "topic": "sports",
+      "difficulty": "medium",
+      "text": "How many minutes are in a standard soccer match, excluding added time and extra time?",
+      "options": [
+        "80",
+        "90",
+        "100",
+        "120"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-h06",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "In fencing, which weapon permits touches with the entire blade and targets the whole body?",
+      "options": [
+        "Foil",
+        "Sabre",
+        "Épée",
+        "Lance"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-h07",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "Which country won the first men's Rugby World Cup in 1987?",
+      "options": [
+        "England",
+        "France",
+        "Australia",
+        "New Zealand"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "spo-h08",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "What is the maximum possible score with a single dart in standard darts?",
+      "options": [
+        "60",
+        "50",
+        "45",
+        "25"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-h09",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "Which athlete set the women's 100 metres world record of 10.49 seconds?",
+      "options": [
+        "Florence Griffith-Joyner",
+        "Shelly-Ann Fraser-Pryce",
+        "Elaine Thompson-Herah",
+        "Marion Jones"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-h10",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "In baseball statistics, what does ERA stand for?",
+      "options": [
+        "Earned Run Average",
+        "Extra Run Allowance",
+        "Estimated Runs Added",
+        "Effective Rotation Average"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-h11",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "Which country won the first FIFA Women's World Cup in 1991?",
+      "options": [
+        "Norway",
+        "United States",
+        "Germany",
+        "China"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-h12",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "In cricket, what does LBW stand for?",
+      "options": [
+        "Long Ball Wide",
+        "Leg Before Wicket",
+        "Left Bat Wicket",
+        "Low Bounce Warning"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-h13",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "Which Olympic athletics event includes ten disciplines?",
+      "options": [
+        "Heptathlon",
+        "Pentathlon",
+        "Decathlon",
+        "Triathlon"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-h14",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "Who was the first gymnast to score a perfect 10 at the Olympic Games?",
+      "options": [
+        "Nadia Comăneci",
+        "Olga Korbut",
+        "Mary Lou Retton",
+        "Larisa Latynina"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-h15",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "In Formula One, what does DRS stand for?",
+      "options": [
+        "Dynamic Racing Speed",
+        "Drag Reduction System",
+        "Driver Recovery Setup",
+        "Downforce Regulation Standard"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-h16",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "Which country has won the most men's Olympic field hockey gold medals?",
+      "options": [
+        "Germany",
+        "Australia",
+        "India",
+        "Netherlands"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "spo-h17",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "In snooker, which colour ball is worth five points?",
+      "options": [
+        "Blue",
+        "Pink",
+        "Black",
+        "Green"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-h18",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "Which swimmer became the first person to swim the English Channel both ways without stopping in 2019?",
+      "options": [
+        "Sarah Thomas",
+        "Diana Nyad",
+        "Alison Streeter",
+        "Trent Grimsey"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "spo-h19",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "Which tennis tournament is played at Flushing Meadows?",
+      "options": [
+        "Wimbledon",
+        "US Open",
+        "French Open",
+        "Australian Open"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "spo-h20",
+      "topic": "sports",
+      "difficulty": "hard",
+      "text": "In baseball, how many outs does a team need to record to end its half-inning?",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Six"
+      ],
+      "correctIndex": 1
+    }
+  ]
+}
