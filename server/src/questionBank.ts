@@ -45,11 +45,11 @@ const questionSchema = z.object({
       message: 'options must not contain duplicates',
     }),
   correctIndex: z.number().int().min(0).max(3),
-})
+}).strict()
 
 const bankSchema = z.object({
   questions: z.array(questionSchema),
-})
+}).strict()
 
 export class QuestionBankError extends Error {
   readonly code: 'INVALID_QUESTION_BANK' | 'UNKNOWN_TOPIC' | 'UNKNOWN_DIFFICULTY' | 'INSUFFICIENT_QUESTIONS'

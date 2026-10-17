@@ -59,6 +59,7 @@ describe('question bank', () => {
     expect(() => parseQuestionBank({ questions: [{ ...first, correctIndex: 9 }] })).toThrowError(
       QuestionBankError,
     )
+    expect(() => parseQuestionBank({ questions: [{ ...first, unexpected: true }] })).toThrowError(QuestionBankError)
 
     const bank = await loadQuestionBank(bankPath)
     const question = bank.questions[0]
