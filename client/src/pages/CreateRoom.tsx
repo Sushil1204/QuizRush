@@ -101,7 +101,7 @@ export default function CreateRoom(): ReactElement {
                   value={avatarId}
                   onChange={setAvatarId}
                   groupName="create-avatar"
-                  columns={4}
+                  columns={6}
                   columnsMobile={4}
                 />
               </div>
