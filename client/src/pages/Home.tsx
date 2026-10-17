@@ -69,7 +69,7 @@ export default function Home(): ReactElement {
   return (
     <>
       <Decor variant="home" />
-      <main className="qr-main">
+      <main className="qr-main qr-main--home">
         <div className="qr-container">
           <section className="qr-hero" aria-labelledby="hero-title">
             <div className="qr-hero__mark">

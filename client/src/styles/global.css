@@ -8,6 +8,7 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   line-height: 1.5;
   color: var(--color-text);
   background: var(--color-background);
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -95,19 +97,19 @@ input {
 }
 
 .qr-container {
-  width: min(var(--container-width), 100% - var(--page-gutter) * 2);
+  width: min(var(--container-width), calc(100% - var(--page-gutter) * 2));
   margin-inline: auto;
 }
 
 .home-container {
-  margin: 1.5rem auto;
+  margin: 0 auto;
 }
 
 .qr-main {
   position: relative;
   z-index: 1;
-  padding-top: var(--space-6);
-  padding-bottom: var(--space-8);
+  padding-top: 20px;
+  padding-bottom: 24px;
 }
 
 .qr-card {
@@ -192,7 +194,7 @@ input {
 
 /* Page headings */
 .qr-page-heading {
-  margin-bottom: var(--space-5);
+  margin-bottom: 16px;
 }
 
 .qr-page-heading h1 {
@@ -234,8 +236,8 @@ input {
   }
 
   .qr-main {
-    padding-top: var(--space-5);
-    padding-bottom: var(--space-7);
+    padding-top: 16px;
+    padding-bottom: 24px;
   }
 }
 

@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 12px;
   animation: qr-rise 0.36s var(--ease-out) both;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .qr-hero__tagline {
-  margin-top: 20px;
+  margin-top: 14px;
   font-size: clamp(1.0625rem, 1rem + 0.5vw, 1.3rem);
   font-weight: 800;
   letter-spacing: -0.01em;
@@ -75,7 +75,7 @@
   align-items: center;
   justify-content: center;
   gap: 13px;
-  margin-top: 16px;
+  margin-top: 10px;
   animation: qr-rise 0.36s var(--ease-out) 0.12s both;
 }
 
@@ -90,7 +90,7 @@
   justify-content: center;
   gap: 16px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
   animation: qr-rise 0.36s var(--ease-out) 0.18s both;
 }
 
@@ -103,8 +103,8 @@
 
 .qr-home-stage {
   position: relative;
-  margin-top: 72px;
-  padding-bottom: 40px;
+  margin-top: 44px;
+  padding-bottom: 24px;
   text-align: center;
 }
 
@@ -135,7 +135,7 @@
   position: relative;
   z-index: 1;
   max-width: 720px;
-  margin: 36px auto 0;
+  margin: 24px auto 0;
   text-align: left;
 }
 
@@ -180,8 +180,8 @@
 .qr-form {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  padding: 28px;
+  gap: 20px;
+  padding: 24px;
 }
 
 .qr-form__actions {
@@ -192,7 +192,7 @@
 
 /* ---------- Create page ---------- */
 .qr-main--create {
-  padding-top: var(--space-5);
+  padding-top: 12px;
 }
 
 .qr-create-grid {
@@ -205,8 +205,8 @@
 .qr-settings {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.75fr);
-  gap: 28px;
-  padding: 28px;
+  gap: 22px;
+  padding: 24px;
 }
 
 .qr-settings__col {
@@ -216,7 +216,7 @@
 }
 
 .qr-settings__title {
-  margin-bottom: 18px;
+  margin-bottom: 12px;
   font-size: 0.8125rem;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -230,7 +230,7 @@
 }
 
 .qr-settings__legend {
-  margin: 20px 0 10px;
+  margin: 14px 0 8px;
 }
 
 .qr-settings__title + .qr-settings__legend {
@@ -238,7 +238,7 @@
 }
 
 .qr-settings__col--player > .qr-fieldset {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 /* ---------- Responsive ---------- */
@@ -248,8 +248,8 @@
   }
 
   .qr-settings {
-    gap: 22px;
-    padding: 24px;
+    gap: 18px;
+    padding: 20px;
   }
 
   .qr-settings__col--game {
@@ -261,7 +261,69 @@
   }
 
   .qr-form {
-    padding: 24px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .qr-main--home > .qr-container {
+    display: grid;
+    grid-template-columns: minmax(320px, 0.9fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: clamp(32px, 5vw, 72px);
+    min-height: calc(100dvh - 112px);
+  }
+
+  .qr-main--home .qr-hero {
+    padding-top: 0;
+  }
+
+  .qr-main--home .qr-home-stage {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .qr-main--home .qr-home-stage__card-wrap {
+    margin-top: 20px;
+  }
+
+  .qr-main--home .qr-demo {
+    padding: 20px 22px;
+  }
+
+  .qr-main--create .qr-settings {
+    gap: 18px;
+    padding: 18px;
+  }
+
+  .qr-main--create .qr-option-grid--topics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .qr-main--create .qr-option-grid--tight {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .qr-main--create .qr-option-grid--questions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .qr-main--create .qr-option-grid--seconds {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .qr-main--create .qr-avatar-grid {
+    gap: 8px;
+  }
+
+  .qr-main--create .qr-avatar__frame {
+    max-width: 50px;
+  }
+
+  .qr-main--create .qr-option {
+    gap: 7px;
+    padding-inline: 10px;
+    font-size: 0.875rem;
   }
 }
 
@@ -292,8 +354,8 @@
   }
 
   .qr-home-stage {
-    margin-top: 40px;
-    padding-bottom: 28px;
+    margin-top: 28px;
+    padding-bottom: 16px;
   }
 
   .qr-home-stage__floor {
@@ -324,7 +386,7 @@
 
   .qr-settings {
     grid-template-columns: 1fr;
-    padding: 18px;
+    padding: 16px;
     gap: 8px;
   }
 
@@ -340,7 +402,7 @@
   }
 
   .qr-preview {
-    padding: 20px 18px;
+    padding: 18px 16px;
     border-radius: var(--radius-lg);
   }
 

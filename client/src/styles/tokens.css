@@ -45,7 +45,7 @@
   /* Layout */
   --container-width: 1200px;
   --nav-height: 52px;
-  --page-gutter: 40px;
+  --page-gutter: 32px;
 
   /* Type */
   --font-sans: 'Nunito', ui-rounded, 'Segoe UI', system-ui, -apple-system, sans-serif;

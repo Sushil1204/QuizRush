@@ -1,7 +1,7 @@
 .qr-nav-wrap {
   position: relative;
   z-index: 5;
-  padding-top: 18px;
+  padding-top: 12px;
 }
 
 .qr-nav {
@@ -118,7 +118,7 @@
 
 @media (max-width: 767px) {
   .qr-nav-wrap {
-    padding-top: 10px;
+    padding-top: 8px;
   }
 
   .qr-nav {
