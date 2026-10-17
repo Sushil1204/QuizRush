@@ -1,0 +1,251 @@
+@import "./tokens.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  line-height: 1.5;
+  color: var(--color-text);
+  background: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+
+button,
+input,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+img,
+svg {
+  display: block;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+/* Browser surfaces belong to the design */
+input {
+  caret-color: var(--color-primary);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d9c9f2;
+  border: 3px solid var(--color-background);
+  border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-soft);
+}
+
+:where(a, button, input, [tabindex]):focus-visible {
+  outline: 3px solid rgba(104, 37, 232, 0.4);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* App shell */
+.qr-app {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: clip;
+  background: var(--color-background);
+}
+
+.qr-container {
+  width: min(var(--container-width), 100% - var(--page-gutter) * 2);
+  margin-inline: auto;
+}
+
+.home-container {
+  margin: 1.5rem auto;
+}
+
+.qr-main {
+  position: relative;
+  z-index: 1;
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-8);
+}
+
+.qr-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-purple);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+}
+
+/* Field labels (caps micro-labels from the reference) */
+.qr-label {
+  display: block;
+  font-size: var(--text-label);
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.qr-field-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.qr-counter {
+  font-size: var(--text-meta);
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.qr-counter.is-full {
+  color: var(--color-danger);
+}
+
+/* Alerts */
+.qr-alert {
+  display: flex;
+  gap: var(--space-2);
+  align-items: flex-start;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: var(--text-body-sm);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.qr-alert--error {
+  background: var(--color-danger-light);
+  color: #a12c2c;
+  border: 1px solid rgba(214, 69, 69, 0.35);
+}
+
+.qr-alert--success {
+  background: var(--color-success-light);
+  color: #087a55;
+  border: 1px solid rgba(14, 159, 110, 0.35);
+}
+
+.qr-field-error {
+  margin-top: var(--space-2);
+  font-size: var(--text-meta);
+  font-weight: 700;
+  color: var(--color-danger);
+}
+
+/* Utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Page headings */
+.qr-page-heading {
+  margin-bottom: var(--space-5);
+}
+
+.qr-page-heading h1 {
+  font-size: var(--text-page);
+  font-weight: 900;
+}
+
+.qr-page-heading p {
+  margin-top: var(--space-2);
+  font-size: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  max-width: 60ch;
+}
+
+.qr-page-heading--center {
+  text-align: center;
+}
+
+.qr-page-heading--center p {
+  margin-inline: auto;
+}
+
+.qr-section-heading {
+  font-size: var(--text-section);
+  font-weight: 900;
+  color: var(--color-text);
+}
+
+@keyframes qr-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --page-gutter: 16px;
+  }
+
+  .qr-main {
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-7);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,65 @@
+/* QuizRush design tokens — single source of truth (brief §3) */
+:root {
+  /* Color */
+  --color-primary: #6825e8;
+  --color-primary-hover: #5420c5;
+  --color-primary-light: #f0e8ff;
+  --color-primary-soft: #e4d6ff;
+  --color-text: #20143d;
+  --color-text-secondary: #625681;
+  --color-background: #fff6e9;
+  --color-surface: #ffffff;
+  --color-surface-soft: #faf7ff;
+  --color-border: #e5d7c4;
+  --color-border-purple: #ded2ff;
+  --color-accent-yellow: #ffc947;
+  --color-success: #0e9f6e;
+  --color-success-light: #e2f7ee;
+  --color-danger: #d64545;
+  --color-danger-light: #fdecec;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+  --radius-btn: 14px;
+
+  /* Elevation */
+  --shadow-card: 0 8px 24px rgba(32, 20, 61, 0.08);
+  --shadow-button: 0 4px 12px rgba(104, 37, 232, 0.2);
+  --shadow-nav: 0 6px 20px rgba(32, 20, 61, 0.07);
+  --shadow-soft: 0 2px 8px rgba(32, 20, 61, 0.05);
+
+  /* Space */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Layout */
+  --container-width: 1200px;
+  --nav-height: 52px;
+  --page-gutter: 40px;
+
+  /* Type */
+  --font-sans: 'Nunito', ui-rounded, 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --text-hero: clamp(2.6rem, 1.4rem + 4.4vw, 4rem);
+  --text-page: clamp(2rem, 1.4rem + 2.4vw, 3rem);
+  --text-section: clamp(1.5rem, 1.3rem + 0.9vw, 1.75rem);
+  --text-card: clamp(1.125rem, 1.05rem + 0.4vw, 1.25rem);
+  --text-body: 1rem;
+  --text-body-sm: 0.875rem;
+  --text-label: 0.8125rem;
+  --text-meta: 0.75rem;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 140ms;
+  --dur: 200ms;
+}
