@@ -103,6 +103,21 @@ describe('GameEngine', () => {
     vi.useRealTimers()
   })
 
+  it('closes exactly once when concurrent final answers arrive', async () => {
+    const { manager, engine, events, host, guest } = await setup()
+    engine.start(host.room.code, host.player.id)
+    vi.advanceTimersByTime(100)
+    const question = manager.get(host.room.code)?.questions[0]
+    if (!question) throw new Error('Question missing')
+
+    await Promise.all([
+      Promise.resolve().then(() => engine.submitAnswer(host.room.code, host.player.id, question.id, 0)),
+      Promise.resolve().then(() => engine.submitAnswer(host.room.code, guest.player.id, question.id, 1)),
+    ])
+    expect(events.filter((event) => event.name === 'game:answer-reveal')).toHaveLength(1)
+    expect(manager.snapshotByCode(host.room.code).phase).toBe('QUESTION_RESULT')
+  })
+
   it('closes unanswered questions on the server deadline and rejects late answers', async () => {
     const { manager, engine, events, host, guest } = await setup()
     engine.start(host.room.code, host.player.id)
