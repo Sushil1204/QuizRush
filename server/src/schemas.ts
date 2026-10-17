@@ -1,6 +1,7 @@
 import { z } from 'zod'
 import { DIFFICULTY_VALUES, REQUEST_TOPIC_VALUES } from './questionBank.js'
 import type {
+  AnswerSubmitPayload,
   RoomCreatePayload,
   RoomJoinPayload,
   RoomReadyPayload,
@@ -33,3 +34,8 @@ export const roomJoinSchema = z.object({
 export const roomReadySchema = z.object({
   ready: z.boolean(),
 }) satisfies z.ZodType<RoomReadyPayload>
+
+export const answerSubmitSchema = z.object({
+  questionId: z.string().min(1),
+  optionIndex: z.number().int().min(0).max(3),
+}) satisfies z.ZodType<AnswerSubmitPayload>

@@ -42,6 +42,23 @@ export type RoomRecord = {
   currentQuestionIndex: number
   questionOpenedAt: number | null
   deadlineAt: number | null
+  game: GameRecord | null
+}
+
+export type AnswerRecord = {
+  playerId: string
+  questionId: string
+  optionIndex: number
+  submittedAt: number
+  correct: boolean
+  points: number
+}
+
+export type GameRecord = {
+  questions: QuestionRecord[]
+  currentQuestionIndex: number
+  eligiblePlayerIds: Set<string>
+  answers: Map<string, AnswerRecord>
 }
 
 export type PublicPlayer = Omit<PlayerRecord, 'disconnectedAt'> & {
@@ -114,6 +131,12 @@ export type ClientToServerEvents = {
     ack: (response: Ack<PublicRoomState>) => void,
   ) => void
   'game:request-state': (ack: (response: Ack<PublicRoomState>) => void) => void
+  'game:start': (ack: (response: Ack<GameStartResponse>) => void) => void
+  'answer:submit': (
+    payload: AnswerSubmitPayload,
+    ack: (response: Ack<AnswerSubmitResponse>) => void,
+  ) => void
+  'game:rematch': (ack: (response: Ack<RematchResponse>) => void) => void
 }
 
 export type ServerToClientEvents = {
@@ -121,7 +144,69 @@ export type ServerToClientEvents = {
   'room:player-joined': (player: PublicPlayer) => void
   'room:player-left': (payload: { playerId: string }) => void
   'room:host-changed': (payload: { hostId: string }) => void
+  'game:countdown': (payload: GameCountdownPayload) => void
+  'game:question-open': (payload: GameQuestionOpenPayload) => void
+  'game:answer-locked': (payload: { playerId: string }) => void
+  'game:answer-reveal': (payload: GameAnswerRevealPayload) => void
+  'game:leaderboard': (payload: { entries: LeaderboardEntry[] }) => void
+  'game:finished': (payload: { entries: LeaderboardEntry[] }) => void
   'server:error': (error: ClientError) => void
+}
+
+export type GameCountdownPayload = {
+  startsAt: number
+  seconds: number
+  totalQuestionCount: number
+}
+
+export type PublicQuestion = {
+  id: string
+  topic: string
+  difficulty: string
+  text: string
+  options: [string, string, string, string]
+}
+
+export type GameQuestionOpenPayload = {
+  question: PublicQuestion
+  questionIndex: number
+  totalQuestions: number
+  openedAt: number
+  deadlineAt: number
+}
+
+export type LeaderboardEntry = {
+  playerId: string
+  nickname: string
+  avatarId: string
+  score: number
+  rank: number
+  correctAnswers: number
+  answeredQuestions: number
+  accuracy: number
+}
+
+export type GameAnswerRevealPayload = {
+  questionId: string
+  correctIndex: number
+  entries: LeaderboardEntry[]
+}
+
+export type GameStartResponse = {
+  state: PublicRoomState
+}
+
+export type AnswerSubmitPayload = {
+  questionId: string
+  optionIndex: number
+}
+
+export type AnswerSubmitResponse = {
+  accepted: true
+}
+
+export type RematchResponse = {
+  state: PublicRoomState
 }
 
 export type SocketData = {

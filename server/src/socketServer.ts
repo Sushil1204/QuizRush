@@ -1,6 +1,7 @@
 import type { Server as HttpServer } from 'node:http'
 import { Server, type Socket } from 'socket.io'
-import { roomCreateSchema, roomJoinSchema, roomReadySchema, roomSettingsSchema } from './schemas.js'
+import { answerSubmitSchema, roomCreateSchema, roomJoinSchema, roomReadySchema, roomSettingsSchema } from './schemas.js'
+import { GameEngine, type GameEvent } from './gameEngine.js'
 import { RoomManager, RoomManagerError } from './roomManager.js'
 import type {
   Ack,
@@ -16,6 +17,7 @@ type QuizSocket = Socket<ClientToServerEvents, ServerToClientEvents, object, Soc
 
 export type SocketServerOptions = {
   manager: RoomManager
+  gameEngine: GameEngine
   corsOrigin?: string | string[]
 }
 
@@ -65,7 +67,33 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
   const io: QuizSocketServer = new Server<ClientToServerEvents, ServerToClientEvents, object, SocketData>(httpServer, {
     cors: { origin: options.corsOrigin ?? true },
   })
-  const { manager } = options
+  const { manager, gameEngine } = options
+
+  const emitGameEvent = (event: GameEvent): void => {
+    switch (event.name) {
+      case 'game:countdown':
+        io.to(event.roomCode).emit('game:countdown', event.payload)
+        break
+      case 'game:question-open':
+        io.to(event.roomCode).emit('game:question-open', event.payload)
+        break
+      case 'game:answer-locked':
+        io.to(event.roomCode).emit('game:answer-locked', event.payload)
+        break
+      case 'game:answer-reveal':
+        io.to(event.roomCode).emit('game:answer-reveal', event.payload)
+        break
+      case 'game:leaderboard':
+        io.to(event.roomCode).emit('game:leaderboard', event.payload)
+        break
+      case 'game:finished':
+        io.to(event.roomCode).emit('game:finished', event.payload)
+        break
+    }
+    emitRoomState(io, manager, event.roomCode)
+  }
+
+  gameEngine.setEventHandler?.(emitGameEvent)
 
   io.on('connection', (socket) => {
     socket.on('room:create', (payload, callback) => {
@@ -111,6 +139,7 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
       try {
         const { roomCode, playerId } = requireSession(socket)
         const result = manager.leave(roomCode, playerId)
+        gameEngine.playerRemoved(roomCode, playerId)
         socket.leave(roomCode)
         socket.data.roomCode = undefined
         socket.data.playerId = undefined
@@ -166,11 +195,48 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
       }
     })
 
+    socket.on('game:start', (callback) => {
+      try {
+        const { roomCode, playerId } = requireSession(socket)
+        const state = gameEngine.start(roomCode, playerId)
+        callback(ok({ state }))
+        io.to(roomCode).emit('room:state', state)
+      } catch (error) {
+        callback(fail(error))
+      }
+    })
+
+    socket.on('answer:submit', (payload, callback) => {
+      const result = answerSubmitSchema.safeParse(payload)
+      if (!result.success) {
+        callback(fail({ code: 'INVALID_PAYLOAD', message: 'The answer payload is invalid.', details: result.error.issues }))
+        return
+      }
+      try {
+        const { roomCode, playerId } = requireSession(socket)
+        callback(ok(gameEngine.submitAnswer(roomCode, playerId, result.data.questionId, result.data.optionIndex)))
+      } catch (error) {
+        callback(fail(error))
+      }
+    })
+
+    socket.on('game:rematch', (callback) => {
+      try {
+        const { roomCode, playerId } = requireSession(socket)
+        const result = gameEngine.rematch(roomCode, playerId)
+        callback(ok(result))
+        io.to(roomCode).emit('room:state', result.state)
+      } catch (error) {
+        callback(fail(error))
+      }
+    })
+
     socket.on('disconnect', () => {
       const roomCode = socket.data.roomCode
       const playerId = socket.data.playerId
       if (!roomCode || !playerId) return
       manager.markDisconnected(roomCode, playerId)
+      gameEngine.playerRemoved(roomCode, playerId)
       emitRoomState(io, manager, roomCode)
     })
   })

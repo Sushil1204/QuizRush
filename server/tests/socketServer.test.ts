@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url'
 import { io as connectClient, type Socket as ClientSocket } from 'socket.io-client'
 import { afterEach, describe, expect, it } from 'vitest'
 import { loadQuestionBank } from '../src/questionBank.js'
+import { GameEngine } from '../src/gameEngine.js'
 import { RoomManager } from '../src/roomManager.js'
 import { createSocketServer } from '../src/socketServer.js'
 import type { ClientToServerEvents, RoomSession, ServerToClientEvents, RoomSettings } from '../src/types.js'
@@ -23,8 +24,10 @@ const servers: Array<{ close: () => Promise<void> }> = []
 
 async function setup() {
   const httpServer = createServer()
-  const manager = new RoomManager(await loadQuestionBank(bankPath))
-  const { io } = createSocketServer(httpServer, { manager })
+  const questionBank = await loadQuestionBank(bankPath)
+  const manager = new RoomManager(questionBank)
+  const gameEngine = new GameEngine(manager, questionBank, { countdownMs: 10, resultMs: 10 })
+  const { io } = createSocketServer(httpServer, { manager, gameEngine })
   httpServer.listen(0)
   await once(httpServer, 'listening')
   const address = httpServer.address()
@@ -53,6 +56,9 @@ function emitAck<T>(socket: TestClient, event: 'room:join', payload: Parameters<
 function emitAck<T>(socket: TestClient, event: 'room:ready', payload: Parameters<ClientToServerEvents['room:ready']>[0]): Promise<T>
 function emitAck<T>(socket: TestClient, event: 'room:update-settings', payload: Parameters<ClientToServerEvents['room:update-settings']>[0]): Promise<T>
 function emitAck<T>(socket: TestClient, event: 'game:request-state', payload?: undefined): Promise<T>
+function emitAck<T>(socket: TestClient, event: 'game:start', payload?: undefined): Promise<T>
+function emitAck<T>(socket: TestClient, event: 'answer:submit', payload: Parameters<ClientToServerEvents['answer:submit']>[0]): Promise<T>
+function emitAck<T>(socket: TestClient, event: 'game:rematch', payload?: undefined): Promise<T>
 function emitAck<T>(socket: TestClient, event: string, payload?: unknown): Promise<T> {
   return new Promise((resolve, reject) => {
     const callback = (response: { ok: boolean; data?: T; error?: { message: string } }) => {
@@ -127,5 +133,48 @@ describe('room Socket.IO events', () => {
     await expect(emitAck(guest, 'room:update-settings', { ...settings, secondsPerQuestion: 30 })).rejects.toThrow()
     const state = await emitAck<RoomSession['room']>(guest, 'room:ready', { ready: true })
     expect(state.players.find((player) => player.nickname === 'Guest')?.ready).toBe(true)
+  })
+
+  it('delivers synchronized question events and accepts server-scored answers', async () => {
+    const url = await setup()
+    const host = await client(url)
+    const guest = await client(url)
+    const session = await emitAck<RoomSession>(host, 'room:create', {
+      nickname: 'Host',
+      avatarId: 'cool',
+      settings,
+    })
+    await emitAck<RoomSession>(guest, 'room:join', {
+      roomCode: session.room.code,
+      nickname: 'Guest',
+      avatarId: 'cat',
+    })
+
+    const hostQuestion = new Promise<Parameters<ServerToClientEvents['game:question-open']>[0]>((resolve) => {
+      host.once('game:question-open', resolve)
+    })
+    const guestQuestion = new Promise<Parameters<ServerToClientEvents['game:question-open']>[0]>((resolve) => {
+      guest.once('game:question-open', resolve)
+    })
+    const started = await emitAck<{ state: RoomSession['room'] }>(host, 'game:start')
+    expect(started.state.phase).toBe('COUNTDOWN')
+    const [hostPayload, guestPayload] = await Promise.all([hostQuestion, guestQuestion])
+    expect(hostPayload.question.id).toBe(guestPayload.question.id)
+    expect(hostPayload.deadlineAt).toBe(guestPayload.deadlineAt)
+
+    const revealPromise = new Promise<Parameters<ServerToClientEvents['game:answer-reveal']>[0]>((resolve) => {
+      host.once('game:answer-reveal', resolve)
+    })
+    await emitAck(host, 'answer:submit', {
+      questionId: hostPayload.question.id,
+      optionIndex: 0,
+    })
+    await emitAck(guest, 'answer:submit', {
+      questionId: guestPayload.question.id,
+      optionIndex: 1,
+    })
+    const reveal = await revealPromise
+    expect(reveal.questionId).toBe(hostPayload.question.id)
+    expect(reveal.entries).toHaveLength(2)
   })
 })

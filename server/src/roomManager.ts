@@ -109,6 +109,7 @@ export class RoomManager {
       currentQuestionIndex: -1,
       questionOpenedAt: null,
       deadlineAt: null,
+      game: null,
     }
     this.rooms.set(code, room)
     const reconnectToken = this.issueReconnectToken(room, player.id)
