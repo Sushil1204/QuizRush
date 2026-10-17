@@ -83,6 +83,7 @@ export class RoomManager {
   private readonly createToken: () => string
   private readonly createId: () => string
   private readonly reconnectTokens = new Map<string, { roomCode: string; playerId: string; expiresAt: number }>()
+  private readonly pendingHostChanges = new Map<string, string>()
 
   constructor(private readonly questionBank: QuestionBank, options: Omit<RoomManagerOptions, 'questionBank'> = {}) {
     this.now = options.now ?? Date.now
@@ -247,7 +248,7 @@ export class RoomManager {
           this.deleteReconnectTokens(code, player.id)
         }
       }
-      this.transferHostIfNeeded(room)
+      this.transferHostIfNeeded(room, true)
       if (room.players.size === 0) {
         expired.push(code)
         this.rooms.delete(code)
@@ -264,6 +265,12 @@ export class RoomManager {
 
   cleanupExpired(): string[] {
     return this.expireRooms()
+  }
+
+  drainHostChanges(): Array<{ roomCode: string; hostId: string }> {
+    const changes = [...this.pendingHostChanges.entries()].map(([roomCode, hostId]) => ({ roomCode, hostId }))
+    this.pendingHostChanges.clear()
+    return changes
   }
 
   roomCount(): number {
@@ -326,13 +333,15 @@ export class RoomManager {
     if (room.hostId !== playerId) throw new RoomManagerError('HOST_ONLY', 'Only the host can change room settings.')
   }
 
-  private transferHostIfNeeded(room: RoomRecord): string | null {
+  private transferHostIfNeeded(room: RoomRecord, announce = false): string | null {
+    const previousHostId = room.hostId
     if (!room.players.has(room.hostId)) {
       const nextHost = [...room.players.values()].find((player) => player.connected) ?? [...room.players.values()][0]
       if (!nextHost) return null
       room.hostId = nextHost.id
     }
     for (const player of room.players.values()) player.isHost = player.id === room.hostId
+    if (announce && previousHostId !== room.hostId) this.pendingHostChanges.set(room.code, room.hostId)
     return room.hostId
   }
 

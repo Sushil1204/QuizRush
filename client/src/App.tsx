@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import CreateRoom from './pages/CreateRoom'
+import Game from './pages/Game'
 import Home from './pages/Home'
 import JoinRoom from './pages/JoinRoom'
 import Lobby from './pages/Lobby'
@@ -33,6 +34,7 @@ export default function App(): ReactElement {
           <Route path="/join" element={<JoinRoom />} />
           <Route path="/create" element={<CreateRoom />} />
           <Route path="/lobby/:code" element={<Lobby />} />
+          <Route path="/game/:code" element={<Game />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

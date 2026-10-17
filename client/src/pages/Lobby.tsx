@@ -1,15 +1,21 @@
-import { useState, type CSSProperties, type ReactElement } from 'react'
+import { useEffect, useState, type CSSProperties, type ReactElement } from 'react'
 import { Link, useLocation, useNavigate, useParams } from 'react-router-dom'
 import Decor from '../../components/Decor'
 import { PageHeading } from '../../components/Headings'
-import { SecondaryButton } from '../../components/Buttons'
+import { PrimaryButton, SecondaryButton } from '../../components/Buttons'
 import { BoltIcon, CheckIcon, CopyIcon, HomeIcon, LeaveIcon } from '../../components/icons'
 import { getAvatar } from '../../data/avatars'
 import { getDifficultyLabel, getTopicLabel } from '../../data/gameOptions'
 import {
   CODE_LENGTH,
+  MIN_PLAYERS,
+  getCurrentPlayerId,
   getRoom,
   leaveRoom,
+  restoreRoomSession,
+  setReady,
+  startGame,
+  subscribeRoomState,
   type Player,
   type Room,
 } from '../services/roomService'
@@ -30,9 +36,21 @@ export default function Lobby(): ReactElement {
   }
   const navigate = useNavigate()
   const [copied, setCopied] = useState<boolean>(false)
+  const [room, setRoom] = useState<Room | null>(() => getRoom(code))
+  const [busy, setBusy] = useState(false)
+  const [serverError, setServerError] = useState<string | null>(null)
 
-  const room: Room | null = getRoom(code)
-  const yourPlayerId: string | null = location.state?.yourPlayerId ?? null
+  const yourPlayerId: string | null = location.state?.yourPlayerId ?? getCurrentPlayerId()
+
+  useEffect(() => {
+    const unsubscribe = subscribeRoomState((nextRoom) => {
+      if (nextRoom.code !== code) return
+      setRoom(nextRoom)
+      if (nextRoom.phase !== 'LOBBY') navigate(`/game/${nextRoom.code}`, { replace: true })
+    })
+    void restoreRoomSession()
+    return unsubscribe
+  }, [code, navigate])
 
   if (!room) {
     return (
@@ -75,8 +93,34 @@ export default function Lobby(): ReactElement {
   }
 
   const handleLeave = (): void => {
-    if (yourPlayerId) leaveRoom(room.code, yourPlayerId)
-    navigate('/')
+    if (!yourPlayerId) {
+      navigate('/')
+      return
+    }
+    setBusy(true)
+    void leaveRoom(room.code, yourPlayerId)
+      .catch((error: unknown) => setServerError(error instanceof Error ? error.message : 'Unable to leave the room.'))
+      .finally(() => {
+        setBusy(false)
+        navigate('/')
+      })
+  }
+
+  const handleReady = (): void => {
+    if (!you || busy) return
+    setBusy(true)
+    void setReady(!you.ready)
+      .catch((error: unknown) => setServerError(error instanceof Error ? error.message : 'Unable to update ready status.'))
+      .finally(() => setBusy(false))
+  }
+
+  const handleStart = (): void => {
+    if (!you?.isHost || busy) return
+    setBusy(true)
+    void startGame()
+      .then((nextRoom) => navigate(`/game/${nextRoom.code}`))
+      .catch((error: unknown) => setServerError(error instanceof Error ? error.message : 'Unable to start the game.'))
+      .finally(() => setBusy(false))
   }
 
   return (
@@ -161,7 +205,31 @@ export default function Lobby(): ReactElement {
                 <span className="qr-chip">{settings.secondsPerQuestion}s each</span>
               </div>
 
-              <SecondaryButton block icon={<LeaveIcon size={17} />} onClick={handleLeave}>
+              {serverError && (
+                <div className="qr-alert qr-alert--error" role="alert">
+                  {serverError}
+                </div>
+              )}
+
+              {you && !you.isHost && (
+                <SecondaryButton block onClick={handleReady} disabled={busy}>
+                  {you.ready ? 'Ready ✓' : 'I’m ready'}
+                </SecondaryButton>
+              )}
+
+              {you?.isHost && (
+                <PrimaryButton
+                  block
+                  icon={<BoltIcon size={17} />}
+                  onClick={handleStart}
+                  disabled={busy || room.players.filter((player) => player.connected).length < MIN_PLAYERS}
+                  loading={busy}
+                >
+                  {busy ? 'Starting…' : 'Start game'}
+                </PrimaryButton>
+              )}
+
+              <SecondaryButton block icon={<LeaveIcon size={17} />} onClick={handleLeave} disabled={busy}>
                 Leave room
               </SecondaryButton>
             </section>

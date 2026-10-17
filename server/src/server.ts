@@ -36,6 +36,11 @@ export async function startServer(config: ServerConfig = loadConfig()): Promise<
   })
   const cleanupTimer = setInterval(() => {
     for (const roomCode of manager.cleanupExpired()) gameEngine.disposeRoom(roomCode)
+    for (const change of manager.drainHostChanges()) {
+      io.to(change.roomCode).emit('room:host-changed', { hostId: change.hostId })
+      const state = manager.get(change.roomCode)
+      if (state) io.to(change.roomCode).emit('room:state', manager.snapshotByCode(change.roomCode))
+    }
   }, config.cleanupIntervalMs)
 
   await new Promise<void>((resolveListen, rejectListen) => {
@@ -59,7 +64,10 @@ export async function startServer(config: ServerConfig = loadConfig()): Promise<
   }
 }
 
-if (process.argv[1] && resolve(process.argv[1]) === resolve(moduleDirectory, 'server.js')) {
+const entryPath = process.argv[1] ? resolve(process.argv[1]) : ''
+const isDirectEntry = entryPath === resolve(moduleDirectory, 'server.ts') || entryPath === resolve(moduleDirectory, 'server.js')
+
+if (isDirectEntry) {
   const config = loadConfig()
   startServer(config)
     .then(({ port }) => {

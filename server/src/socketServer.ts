@@ -176,6 +176,7 @@ export function createSocketServer(httpServer: HttpServer, options: SocketServer
         io.to(roomCode).emit('room:player-left', { playerId: result.player.id })
         if (result.hostChanged) io.to(roomCode).emit('room:host-changed', { hostId: result.hostChanged })
         emitRoomState(io, manager, roomCode)
+        if (result.deleted) gameEngine.disposeRoom(roomCode)
       } catch (error) {
         callback(fail(error))
       }

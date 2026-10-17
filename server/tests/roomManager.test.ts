@@ -107,6 +107,7 @@ describe('RoomManager', () => {
 
     expect(manager.cleanupExpired()).toEqual([])
     expect(manager.snapshotByCode(host.room.code).hostId).toBe(guest.player.id)
+    expect(manager.drainHostChanges()).toEqual([{ roomCode: host.room.code, hostId: guest.player.id }])
     expect(manager.snapshotByCode(host.room.code).players.some((player) => player.id === host.player.id)).toBe(false)
     expect(() => manager.join({
       roomCode: host.room.code,
